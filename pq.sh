@@ -16,7 +16,10 @@ fi
 . "$VENV_DIR"/bin/activate
 
 python3 $PROJECT_MODULE "$@"
+EXIT_CODE=$?
 
 # Clean up
 deactivate
 cd "$OLD_PWD" || exit 1
+
+exit $EXIT_CODE
