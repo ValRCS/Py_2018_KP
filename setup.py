@@ -13,6 +13,6 @@ setup(
     author="Rihards Skuja",
     author_email="rssk@protonmail.com",
     packages=find_packages(),
-    install_requires=["PySide2", "requests"],
+    install_requires=["PySide2", "requests", "beautifulsoup4"],
     tests_require=["pytest"],
 )
