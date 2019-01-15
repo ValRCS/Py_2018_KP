@@ -6,3 +6,19 @@ pq package
     :undoc-members:
     :show-inheritance:
 
+Subpackages
+-----------
+
+.. toctree::
+
+    pq.providers
+    pq.widgets
+
+Submodules
+----------
+
+.. toctree::
+
+   pq.app
+   pq.gui
+

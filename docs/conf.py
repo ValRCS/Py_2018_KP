@@ -111,10 +111,16 @@ htmlhelp_basename = "pqdoc"
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = "xelatex"
 latex_elements = {
     "papersize": "a4paper",
     "pointsize": "12pt",
     "extraclassoptions": "openany,oneside",
+    "fontpkg": r"""
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+""",
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
