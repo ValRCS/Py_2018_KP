@@ -3,7 +3,7 @@ import requests
 import importlib
 import pkgutil
 
-import pq.providers as providers
+from pq import providers
 
 
 class BaseProvider:

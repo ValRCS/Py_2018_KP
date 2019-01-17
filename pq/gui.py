@@ -3,10 +3,10 @@ from PySide2 import QtWidgets
 
 from pq import __name__, __version__
 
-from widgets.providers import ProviderListWidget
-from widgets.results import ResultsWidget
-from widgets.save_search import SaveSearchWidget
-from widgets.load_search import LoadSearchWidget
+from pq.widgets.providers import ProviderListWidget
+from pq.widgets.results import ResultsWidget
+from pq.widgets.save_search import SaveSearchWidget
+from pq.widgets.load_search import LoadSearchWidget
 
 
 class MainWindow(QtWidgets.QMainWindow):
