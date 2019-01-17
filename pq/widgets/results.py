@@ -13,7 +13,7 @@ class TableHeader(Enum):
 class ResultsWidget(QtWidgets.QWidget):
     header_labels = [header.name for header in TableHeader]
 
-    def __init__(self, parent=None):
+    def __init__(self):
         super().__init__()
 
         self.table = QtWidgets.QTableWidget()
@@ -29,7 +29,6 @@ class ResultsWidget(QtWidgets.QWidget):
 
     @QtCore.Slot()
     def open_url(self, row, column):
-        print(f"r: {row} | c: {column}")
         if column == TableHeader.URL.value:
             item = self.table.item(row, TableHeader.URL.value)
             webbrowser.open_new_tab(item.text())

@@ -122,4 +122,7 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
+# User database
+*.db
+
 # End of https://www.gitignore.io/api/python

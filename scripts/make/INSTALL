@@ -15,7 +15,8 @@ VENV_DIR=".venv"
 OS="$(lsb_release -si)"
 
 if [ "$OS" = "Arch" ]; then
-    (sudo pacman -Syu --needed python-pip) || err
+    # (sudo pacman -Syu --needed python-pip) || err
+    echo ""
 elif [ "$OS" = "Ubuntu" ]; then
     (sudo apt -qq update && sudo apt -qq install python3-pip python3-venv) || err
 else

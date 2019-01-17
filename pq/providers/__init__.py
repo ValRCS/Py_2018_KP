@@ -16,8 +16,8 @@ class BaseProvider:
     def find_matches(self):
         pass
 
-    def get_page(self):
-        r = requests.get(self.url)
+    def get_page(self, url):
+        r = requests.get(url)
         self.soup = BeautifulSoup(r.text, features="html.parser")
         self.find_matches()
 
