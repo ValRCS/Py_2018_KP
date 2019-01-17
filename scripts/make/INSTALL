@@ -15,10 +15,9 @@ VENV_DIR=".venv"
 OS="$(lsb_release -si)"
 
 if [ "$OS" = "Arch" ]; then
-    # (sudo pacman -Syu --needed python-pip) || err
-    echo ""
+    (sudo pacman -Syu --needed python-pip qt5-base python-sphinx python-sphinx_rtd_theme) || err
 elif [ "$OS" = "Ubuntu" ]; then
-    (sudo apt -qq update && sudo apt -qq install python3-pip python3-venv) || err
+    (sudo apt -qq update && sudo apt -qq install python3-pip python3-venv sphinx-common sphinx-rtd-theme-common) || err
 else
     echo "Unsupported OS: $OS. Will continue without installing system dependencies."
 fi
