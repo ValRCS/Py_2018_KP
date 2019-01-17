@@ -20,5 +20,6 @@ Submodules
 .. toctree::
 
    pq.app
+   pq.db
    pq.gui
 

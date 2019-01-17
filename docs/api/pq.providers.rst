@@ -13,4 +13,5 @@ Submodules
 
    pq.providers.ebay
    pq.providers.reklama
+   pq.providers.ss
 

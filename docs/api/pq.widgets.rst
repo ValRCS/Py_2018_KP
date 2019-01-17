@@ -11,7 +11,8 @@ Submodules
 
 .. toctree::
 
+   pq.widgets.load_search
    pq.widgets.providers
    pq.widgets.results
-   pq.widgets.search
+   pq.widgets.save_search
 
